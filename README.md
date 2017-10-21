@@ -5,7 +5,9 @@ This container was bringin from Docker Get Started Page.
 
 ## Libs Imported
 - Flask
-- Redis
+- pyyaml
+- ua-parser
+- user-agents
 
 ## Usages
 1. Clone this image
