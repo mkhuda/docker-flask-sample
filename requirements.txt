@@ -1,2 +1,5 @@
 Flask
 Redis
+pyyaml
+ua-parser
+user-agents
