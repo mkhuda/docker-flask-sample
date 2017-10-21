@@ -29,7 +29,7 @@ def hello():
            "<b>Is bot? :D</b> {is_bot}<br>" \
            "<b>Your device is:</b> {string_user_agent}" \
            "<br><br>" \
-           "compiled by <a href='https://mkhuda.com/>mkhuda</a>'
+           "compiled by <a href='https://mkhuda.com/'>mkhuda</a>"
     return html.format(name="This message are from docker container!", hostname=socket.gethostname(), ua=request.headers.get('User-Agent'), is_mobile=is_mobile, is_tablet = is_tablet, is_touch_capable = is_touch_capable, is_pc = is_pc, is_bot = is_bot, string_user_agent = string_user_agent)
 
 if __name__ == "__main__":
