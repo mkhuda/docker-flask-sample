@@ -25,7 +25,32 @@ To Remove containers Run `docker container rm $(docker container ls -a -q)`
 To see list of container running, use `docker ps`.
 
 ## Service and Swarm
-Docker has a service and swarms feature to demonstrate like load balancing over containers. You need to do is `docker-compose.yml` and then run this following commands to make it:
+Docker has a service and swarms feature to demonstrate like load balancing over containers. You need to do is `docker-compose.yml` :
+
+```
+version: "3"
+services:
+  web:
+    image: emsi_python_sample:latest
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+networks:
+  webnet:
+```
+
+I use local image for this project, you don't need a Docker Cloud account.
+
+And then run this following commands to make it:
 
 1. Run `docker swarms init` to initialize swarms
 2. Then run `docker stack deploy -c docker-compose.yml pythonproject` to define a new service called *pythonproject*
