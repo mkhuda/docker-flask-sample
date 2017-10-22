@@ -1,7 +1,7 @@
 # docker-flask-sample
 Docker container with Python 2.7 and Flask (Sample from Get Started)
 
-This container was bringin from Docker Get Started Page.
+This container was bringin from Docker Get Started Page. I added feature for checking and parsing user agent of visitors.
 
 ## Libs Imported
 - Flask
