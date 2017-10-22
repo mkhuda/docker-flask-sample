@@ -1,6 +1,7 @@
 # docker-flask-sample
-![Alt text](images/docker-screenshot.png?raw=true "Web Screenshot")
 Docker container with Python 2.7 and Flask (Sample from Get Started)
+
+![Alt text](images/docker-screenshot.png?raw=true "Web Screenshot")
 
 This container was bringin from Docker Get Started Page. I added feature for checking and parsing user agent of visitors.
 
@@ -29,6 +30,9 @@ Docker has a service and swarms feature to demonstrate like load balancing over 
 1. Run `docker swarms init` to initialize swarms
 2. Then run `docker stack deploy -c docker-compose.yml pythonproject` to define a new service called *pythonproject*
 3. Run `docker service ls` to check running service
+
+![Alt text](images/service-screenshot.png?raw=true "Service Screenshot")
+
 4. Because we ported the app into port 80, you can access this service through `http://localhost:80` and Voila!
 5. Refresh it, and make sure container host ID is changed on every hit.
 
