@@ -1,5 +1,5 @@
 # docker-flask-sample
-![Alt text](/docker-flask-sample/images/docker-screenshot.png?raw=true "Web Screenshot")
+![Alt text](images/docker-screenshot.png?raw=true "Web Screenshot")
 Docker container with Python 2.7 and Flask (Sample from Get Started)
 
 This container was bringin from Docker Get Started Page. I added feature for checking and parsing user agent of visitors.
